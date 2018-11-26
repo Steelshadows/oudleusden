@@ -12,26 +12,32 @@ margin:5px 2.5%;
 }
 nav ul{
 background-color: #f6f6f6;
-padding:2px;
+padding:9px;
 text-align: center;
 }
 nav ul li{
   list-style: none;
   display:inline;
-  font-size: 23px;
-  margin: 0 3.5%;
+  font-size: 15px;
+  margin: 1px 3.5%;
   float: none;
   border: 1px solid #f6f6f6;
   text-decoration: none;
-
 }
 nav ul li a{
 text-decoration: none;
+border-bottom: 3px solid #eee;
 color:#558971;
-}
-.thisnav{
-  font-size: 27px;
+padding:5px;
 
+
+}
+nav ul li a:hover{
+border-bottom: 3px solid #558971;
+}
+
+.thisnav{
+  border-bottom: 3px solid #558971;
 
 }
 .current{font-size: 25px;}
