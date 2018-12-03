@@ -184,3 +184,26 @@ border-bottom: 3px solid #558971;
 .dik{font-weight: bold;}
 .groot{font-size: 1.2em;}
 .bullet{margin:0 5px}
+
+.vertcontainer{
+  width:30%;
+  display: inline-block;
+  margin:5%;
+  line-height: normal;
+  //float:left;
+}
+.vertcontainer input , .vertcontainer select{
+  display: block;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #558971;
+  margin-bottom: 15px;
+  width: 160px;
+}
+.vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
+input[type="submit"]{height:20px;}
+
+.flexing{
+  display: flex;
+
+}

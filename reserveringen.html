@@ -47,12 +47,72 @@
 		</nav>
 		<div class="content">
 			<div class="dotborder">
-				.
-				.
-				.
-				.
-				.
-			</div>
+				<h2>Vraag hier uw informatie over een bijeenkomst aan.</h2>
+				<form method="POST" action="mailto:521282@edu.rocmn.nl">
+
+					<div class="flexing">
+						<div class="vertcontainer">
+							<label for="naam">Naam:</label>
+							<input type="text" name="naam" required>
+
+							<label for="tel">Telefoon nummer:</label>
+							<input type="tel" name="tel" required>
+
+							<label for="bijeenkomst">kies een bijeenkomst:</label>
+							<select name="bijeenkomst" required>
+								<option selected disabled>kies...</option>
+								<option value="dinner">dinner</option>
+								<option value="vergadering">vergadering</option>
+								<option value="beurs">beurs</option>
+								<option value="congres">congres</option>
+								<option value="presentatie">presentatie</option>
+								<option value="feest">feest</option>
+								<option value="receptie">receptie</option>
+								<option value="bruiloft">bruiloft</option>
+							</select>
+
+
+							<label for="mensen">aprox. aantal mensen:</label>
+							<input type="number" name="mensen"required>
+
+							<label for="btijd">begintijd</label>
+							<input type="time" name="btijd"required>
+
+							<label for="etijd">eindtijd</label>
+							<input type="time" name="etijd"required>
+						</div>
+
+
+
+
+
+
+
+						<div class="vertcontainer">
+							<label for="bnaam">bedrijfsnaam:</label>
+							<input type="text" name="bnaam"required>
+
+							<label for="email">E-Mail address:</label>
+							<input type="email" name="email"required>
+
+							<label for="datum">datum:</label>
+							<input type="date" name="datum"required>
+
+							<label>extra keuzes</label>
+							<div><input type="checkbox" name="lunch"><label for="lunch">lunch</label></div>
+							<div><input type="checkbox" name="audio"><label for="audio">audio</label></div>
+							<div><input type="checkbox" name="pauze"><label for="pauze">koffie pauze</label></div>
+							<div><input type="checkbox" name="koek"><label for="koek">koekassortiment</label></div>
+<!--
+							<label for=""></label>
+							<input type="text" name=""required>
+-->
+							<input type="submit" value="verstuur">
+						</div>
+				</div>
+			</form>
+
+
 			<div class="dotborder" style="text-align:center;">
 				<span class="dik">Restaurant Oud Leusden</span><span class="bullet">&bull;</span>
 				<span>Vlooswijkseweg 1</span><span class="bullet">&bull;</span>
