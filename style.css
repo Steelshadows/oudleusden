@@ -214,3 +214,21 @@ input[type="submit"]{height:20px;}
   display: flex;
 
 }
+
+.mySlides {
+	display: none;
+	}
+	
+.mySlides:first-of-type{
+	display: block;
+}
+
+.w3-button{
+	white-space:normal;
+	border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;
+	-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+}
+	
+.w3-button:hover{
+	color:#000!important;background-color:#ccc!important;
+}
