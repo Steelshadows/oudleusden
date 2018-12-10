@@ -57,9 +57,23 @@
 					<img class="mySlides" src="media/Pics/foto8.jpg">
 					<img class="mySlides" src="media/Pics/foto9.jpg">
 
-					
-					<button class="slidebutton buttonright myButton" onclick="plusDivs(-1)">&#10094;</button>
-					<button class="slidebutton buttonleft myButton" onclick="plusDivs(1)">&#10095;</button>
+					<script>
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {myIndex = 1}
+                            x[myIndex-1].style.display = "block";
+                            setTimeout(carousel, 2000); // Change image every 2 seconds
+                        }
+					</script>
+
 				</div>
 			<div class="dotborder" style="text-align:center;">
 				<span class="dik">Restaurant Oud Leusden</span><span class="bullet">&bull;</span>
