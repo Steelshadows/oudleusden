@@ -45,13 +45,49 @@
 			</ul>
 		</nav>
 		<div class="content">
-			<div class="dotborder"></div>
-			.
-			.
-			.
-			.
-			.
-			.
+			<div class="dotborder" style="display: flex;">
+				<div>
+					<h1>WELKOM</h1>
+					<p>Aan de rand van Amersfoort, vlakbij de natuurrijke Leusderheide vindt u Restaurant Oud Leusden.</p>
+					<p>Door de fraaie parkachtige ligging is deze locatie uitermate geschikt voor een breed scala aan mogelijkheden. Voor al uw feestelijke en zakelijke ontmoetingen. Restaurant Oud Leusden is een horeca-etablissement met een lange traditie van gastvrijheid.</p>
+					<p>Door de centrale ligging en goede bereikbaarheid een ideale "stop" voor auto en touringcars.</p>
+					<div class="green cloud"><p>Uw auto parkeren? Geen probleem! Er is voldoende gratis parkeergelegenheid op eigen terrein.</p></div>
+					<p>U kunt gemoedelijk en onderhoudend tafelen in ons sfeervolle restaurant of op het ruime terras. De menukaart biedt een ruime varierende keuze waarbij seizoensgebonden producten een belangrijke rol spelen.</p>
+					<p>Voor rust en ruimte, een goede kop koffie, uitgebreide lunch of diner, Restaurant Oud Leusden maakt het mogelijk om gewoon gastvrij te genieten.</p>
+					<p>Ook grotere gezelschappen zijn van harte welkom in een van onze zalen.</p>
+				</div>
+				<div class="dotleft">
+					<div class="slider">
+						<img class="mySlides" src="media/Pics/foto1.jpg">
+						<img class="mySlides" src="media/Pics/foto2.jpg">
+						<img class="mySlides" src="media/Pics/foto3.jpg">
+						<img class="mySlides" src="media/Pics/foto4.jpg">
+						<img class="mySlides" src="media/Pics/foto5.jpg">
+						<img class="mySlides" src="media/Pics/foto6.jpg">
+						<img class="mySlides" src="media/Pics/foto7.jpg">
+						<img class="mySlides" src="media/Pics/foto8.jpg">
+						<img class="mySlides" src="media/Pics/foto9.jpg">
+
+						<script>
+	                        var myIndex = 0;
+	                        carousel();
+
+	                        function carousel() {
+	                            var i;
+	                            var x = document.getElementsByClassName("mySlides");
+	                            for (i = 0; i < x.length; i++) {
+	                                x[i].style.display = "none";
+	                            }
+	                            myIndex++;
+	                            if (myIndex > x.length) {myIndex = 1}
+	                            x[myIndex-1].style.display = "block";
+	                            setTimeout(carousel, 2000); // Change image every 2 seconds
+	                        }
+						</script>
+
+					</div>
+				</div>
+			</div>
 			<div class="dotborder" style="text-align:center;">
 				<span class="dik">Restaurant Oud Leusden</span><span class="bullet">&bull;</span>
 				<span>Vlooswijkseweg 1</span><span class="bullet">&bull;</span>
@@ -62,5 +98,5 @@
 			</div>
 		</div>
 	</div>
-</body>
+	</body>
 </html>
