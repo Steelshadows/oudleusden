@@ -104,9 +104,20 @@ input[type="submit"]{height:20px;}
 	color:#000!important;background-color:#ccc!important;
 }
 
-
-
-
+.green{
+  border:1px solid #558971;
+  background-color:#ebf2ef;
+}
+.cloud {
+  border-radius: 5px;
+  width:80%;}
+.dotleft{
+  border-left: 1.5px dotted lightgrey;
+  padding: 15px;
+}
+.dotleft p {
+  margin:10px;
+}
 
 
 
@@ -297,7 +308,7 @@ input[type="submit"]{height:20px;}
 .mySlides {
 	display: none;
 	}
-	
+
 .mySlides:first-of-type{
 	display: block;
 }
@@ -307,7 +318,7 @@ input[type="submit"]{height:20px;}
 	border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;
 	-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
 }
-	
+
 .slidebutton:hover{
 	color:#000!important;background-color:#ccc!important;
 }
