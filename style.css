@@ -104,9 +104,15 @@ input[type="submit"]{height:20px;}
   border:1px solid #558971;
   background-color:#ebf2ef;
 }
+.grey{
+  border:1px solid darkgrey;
+  background-color:lightgrey;
+}
 .cloud {
   border-radius: 5px;
-  width:80%;}
+  width:80%;
+  margin:15px;
+}
 .dotleft{
   border-left: 1.5px dotted lightgrey;
   padding: 15px;
