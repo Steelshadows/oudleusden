@@ -75,7 +75,7 @@ border-bottom: 3px solid #558971;
   width: 130px;
 }
 .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
-input[type="submit"]{height:20px;}
+/*input[type="submit"]{height:20px;} */
 
 .flexing{
   display: flex;
@@ -112,6 +112,11 @@ input[type="submit"]{height:20px;}
   border-radius: 5px;
   width:80%;
   margin:15px;
+  display: flex;
+  padding: 10px;
+}
+.cloud[type="submit"]{
+  background-color:  #558971;
 }
 .dotleft{
   border-left: 1.5px dotted lightgrey;
@@ -120,8 +125,7 @@ input[type="submit"]{height:20px;}
 .dotleft p {
   margin:10px;
 }
-
-
+.klijn {font-size: 0.7em}
 
 
 
