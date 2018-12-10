@@ -1,10 +1,14 @@
-html{font-size: 16px;}
+html{
+    font-size: 16px;
+    background-color: ghostwhite;
+}
 .bscontain{
   width:85%;
   box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.25);
   margin: 0 auto;
   max-width: 1400px;
   min-width: 400px;
+    background-color: white;
 }
 header{
 padding:  5px 10px;
@@ -308,10 +312,9 @@ input[type="submit"]{height:20px;}
 	color:#000!important;background-color:#ccc!important;
 }
 
-.slider{
-	position: relative;
-	left: 800px;
-	top: 20px;
-	margin-bottom: 40px;
+.slider {
+    position: relative;
+    left: 800px;
+    top: 20px;
+    margin-bottom: 40px;
 }
->>>>>>> 268f971eab050e945144914d38be0ff779ca5845
