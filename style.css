@@ -5,10 +5,13 @@ html{font-size: 16px;}
     margin: 0 auto;
     max-width: 1400px;
     min-width: 400px;
+<<<<<<< HEAD
 }
 .comment{
   padding:10px;
   border: 1px solid #558971;
+=======
+>>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
 }
 header{
     padding:  5px 10px;
@@ -56,8 +59,13 @@ nav ul li a:hover{
     font-weight: normal;
     font-size: 16px;
 }
+<<<<<<< HEAD
 .dotborder p , .dotborder a{
   margin:10px;
+=======
+.dotborder p{
+    margin:10px;
+>>>>>>> 52869fd1a399c090748d27f2f5598127aa85fd1c
 }
 .dik{font-weight: bold;}
 .groot{font-size: 1.2em;}
@@ -69,7 +77,22 @@ nav ul li a:hover{
     margin:5%;
     line-height: normal;
 //float:left;
+<<<<<<< HEAD
+=======
 }
+<<<<<<< HEAD
+=======
+.vertcontainer input , .vertcontainer select{
+    display: block;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #558971;
+    margin-bottom: 15px;
+    width: 130px;
+>>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
+}
+.vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
+>>>>>>> 52869fd1a399c090748d27f2f5598127aa85fd1c
 /*input[type="submit"]{height:20px;} */
 
 .flexing{
@@ -144,8 +167,13 @@ nav ul li a:hover{
 }
 
 @media only screen and (min-width:1100px){
+<<<<<<< HEAD
   .route{margin-left: 35%;}
   iframe{width:350px;}
+=======
+<<<<<<< HEAD
+
+>>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
@@ -225,7 +253,71 @@ nav ul li a:hover{
   }
   .headerwifi,.headerlogo{
     display:inline;
+=======
+    .slogan{
+        display:inline-block;
+        margin-right:42px;
+        width:40%;
+        background-color: #558971;
+        padding: 2px 5px;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    .slogan p{
+        font-style: italic;
+        font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
+        color:#fff;
+        width:auto;
+    }
+    .slogan p:first-of-type{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .slogan p:nth-of-type(2){
+        font-size: 15px;
+    }
+    .headerwifi,.headerlogo{
+        display:inline;
+        margin: 0 45px 0 15px;
+    }
+    .logo2contain{
+        display: none;
+    }
+    .icon{display: none;}
+}
 
+<<<<<<< HEAD
+=======
+@media only screen and (max-width:1100px){
+    .slogan{
+        display:inline-block;
+        margin-right:42px;
+        width:40%;
+        background-color: #558971;
+        padding: 2px 5px;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    .slogan p{
+        font-style: italic;
+        font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
+        color:#fff;
+        width:auto;
+    }
+    .slogan p:first-of-type{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .slogan p:nth-of-type(2){
+        font-size: 15px;
+    }
+    .headerwifi,.headerlogo{
+        display:inline;
+>>>>>>> 52869fd1a399c090748d27f2f5598127aa85fd1c
+
+>>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
     }
     .logo2contain{
         display: none;
@@ -234,6 +326,7 @@ nav ul li a:hover{
         margin: 1px 1.5%;
     }
     .icon{display: none;}
+<<<<<<< HEAD
 }
 .dotdis{
     border-left: 1.5px dotted lightgrey;
@@ -243,6 +336,13 @@ nav ul li a:hover{
 @media only screen and (max-width:750px){
   iframe{display:none;}
   .route{display:block;}
+=======
+}
+
+@media only screen and (max-width:750px){
+<<<<<<< HEAD
+
+>>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
@@ -295,11 +395,59 @@ nav ul li a:hover{
   .logo2contain,.mottotextcontainer{
     display: inline-block;
   }
+<<<<<<< HEAD
   .dotdis{
   display:block;
   border:none;
   padding:15px 5px;
   }
+=======
+=======
+    .bscontain{
+        box-shadow: none;
+        height: 100%;
+        width: 100%;
+    }
+    .slogan{
+        display:inline-block;
+        margin:2%;
+        width:96%;
+        background-color: #558971;
+        padding: 2px 5px;
+        text-align: center;
+    }
+    .flexing{display:block;width:100%;}
+    .vertcontainer{
+        display:block;
+        width:80%;
+    }
+    label{font-size: 1.5em;}
+    input , select{
+        width:80%;
+        font-size: 1.1em;
+        height:40px;
+    }
+    .slogan p{
+        font-style: italic;
+        font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
+        color:#fff;
+        width:auto;
+    }
+    .slogan p:first-of-type{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .slogan p:nth-of-type(2){
+        font-size: 15px;
+    }
+    .headerwifi , .headerlogo{
+        display:none;
+    }
+    .logo2contain,.mottotextcontainer{
+        display: inline-block;
+    }
+>>>>>>> 52869fd1a399c090748d27f2f5598127aa85fd1c
+>>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
 
 
 
