@@ -5,13 +5,10 @@ html{font-size: 16px;}
     margin: 0 auto;
     max-width: 1400px;
     min-width: 400px;
-<<<<<<< HEAD
 }
 .comment{
   padding:10px;
   border: 1px solid #558971;
-=======
->>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
 }
 header{
     padding:  5px 10px;
@@ -47,6 +44,11 @@ nav ul li a:hover{
 .mottotextcontainer{display: inline;}
 
 
+iframe{
+  width:300px;
+  height:300px;
+}
+
 .dotborder{
     border-top: 1.5px dotted lightgrey;
     margin-top: 10px;
@@ -58,14 +60,10 @@ nav ul li a:hover{
     font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
     font-weight: normal;
     font-size: 16px;
+    padding:5px;
 }
-<<<<<<< HEAD
 .dotborder p , .dotborder a{
   margin:10px;
-=======
-.dotborder p{
-    margin:10px;
->>>>>>> 52869fd1a399c090748d27f2f5598127aa85fd1c
 }
 .dik{font-weight: bold;}
 .groot{font-size: 1.2em;}
@@ -77,27 +75,17 @@ nav ul li a:hover{
     margin:5%;
     line-height: normal;
 //float:left;
-<<<<<<< HEAD
-=======
-}
-<<<<<<< HEAD
-=======
-.vertcontainer input , .vertcontainer select{
-    display: block;
-    height: 30px;
-    border-radius: 3px;
-    border: 1px solid #558971;
-    margin-bottom: 15px;
-    width: 130px;
->>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
 }
 .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
->>>>>>> 52869fd1a399c090748d27f2f5598127aa85fd1c
+
 /*input[type="submit"]{height:20px;} */
 
 .flexing{
     display: flex;
-
+    flex-direction: row;
+    align-items: center;
+    display:block;
+    flex-wrap: nowrap;
 }
 
 .mySlides {
@@ -130,9 +118,14 @@ nav ul li a:hover{
     border-radius: 5px;
     width:80%;
     margin:15px;
-    display: flex;
     padding: 10px;
+    float:left;
 }
+.cloud.grey{
+  width: 27.7%;
+  height: 80%;
+}
+
 .cloud[type="submit"]{
     background-color:  #558971;
 }
@@ -167,13 +160,6 @@ nav ul li a:hover{
 }
 
 @media only screen and (min-width:1100px){
-<<<<<<< HEAD
-  .route{margin-left: 35%;}
-  iframe{width:350px;}
-=======
-<<<<<<< HEAD
-
->>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
@@ -217,8 +203,19 @@ nav ul li a:hover{
 }
 
 @media only screen and (max-width:1100px){
-  .route{margin-left: 25%;}
-  iframe{width:250px;}
+  .mySlides{margin-left:calc(50vw - 310px);}
+  .cloud.grey{
+    width: 90%;
+    font-size: 1.2em;
+    text-align:center;
+  }
+  .dotborder{
+    flex-direction: column;
+  }
+  .dotleft{
+      border-left: none;
+  }
+  .cloud.grey input{margin-left:10%;}
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
@@ -287,37 +284,6 @@ nav ul li a:hover{
     .icon{display: none;}
 }
 
-<<<<<<< HEAD
-=======
-@media only screen and (max-width:1100px){
-    .slogan{
-        display:inline-block;
-        margin-right:42px;
-        width:40%;
-        background-color: #558971;
-        padding: 2px 5px;
-        position: relative;
-        justify-content: center;
-        text-align: center;
-    }
-    .slogan p{
-        font-style: italic;
-        font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
-        color:#fff;
-        width:auto;
-    }
-    .slogan p:first-of-type{
-        font-size: 17px;
-        font-weight: bold;
-    }
-    .slogan p:nth-of-type(2){
-        font-size: 15px;
-    }
-    .headerwifi,.headerlogo{
-        display:inline;
->>>>>>> 52869fd1a399c090748d27f2f5598127aa85fd1c
-
->>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
     }
     .logo2contain{
         display: none;
@@ -326,7 +292,6 @@ nav ul li a:hover{
         margin: 1px 1.5%;
     }
     .icon{display: none;}
-<<<<<<< HEAD
 }
 .dotdis{
     border-left: 1.5px dotted lightgrey;
@@ -334,15 +299,8 @@ nav ul li a:hover{
 }
 
 @media only screen and (max-width:750px){
-  iframe{display:none;}
-  .route{display:block;}
-=======
-}
-
-@media only screen and (max-width:750px){
-<<<<<<< HEAD
-
->>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
+  nav {height: 60px;}
+  #foldmenu{min-height: 55px;}
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
@@ -351,6 +309,11 @@ nav ul li a:hover{
     margin-bottom: 15px;
     width: 90%;
   }
+  .mySlides{
+    margin-left:calc(50vw - 150px);
+    width:250px;
+    height:250px;
+    }
   .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 35px; height: 30px; display: block;}
   .bscontain{
     box-shadow: none;
@@ -365,10 +328,12 @@ nav ul li a:hover{
     padding: 2px 5px;
     text-align: center;
   }
-  .flexing{display:block;width:100%;}
+  .flexing{
+    width:100%;
+  }
   .vertcontainer{
     display:block;
-    width:80%;
+    width:70%;
   }
   label{font-size: 1.5em;}
   input , select{
@@ -395,13 +360,11 @@ nav ul li a:hover{
   .logo2contain,.mottotextcontainer{
     display: inline-block;
   }
-<<<<<<< HEAD
   .dotdis{
   display:block;
   border:none;
   padding:15px 5px;
   }
-=======
 =======
     .bscontain{
         box-shadow: none;
@@ -416,7 +379,7 @@ nav ul li a:hover{
         padding: 2px 5px;
         text-align: center;
     }
-    .flexing{display:block;width:100%;}
+    .flexing{width:100%;}
     .vertcontainer{
         display:block;
         width:80%;
@@ -446,14 +409,6 @@ nav ul li a:hover{
     .logo2contain,.mottotextcontainer{
         display: inline-block;
     }
->>>>>>> 52869fd1a399c090748d27f2f5598127aa85fd1c
->>>>>>> 0edca0e40298a2c2d75d666a73dd202bb7c3fbc9
-
-
-
-
-
-    #foldmenu{min-height: 53px;}
     .fold li:not(:first-child) {display: none;}
     .icon {
         float: right;
