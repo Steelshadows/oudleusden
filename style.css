@@ -6,6 +6,10 @@ html{font-size: 16px;}
     max-width: 1400px;
     min-width: 400px;
 }
+.comment{
+  padding:10px;
+  border: 1px solid #558971;
+}
 header{
     padding:  5px 10px;
 }
@@ -140,7 +144,8 @@ nav ul li a:hover{
 }
 
 @media only screen and (min-width:1100px){
-
+  .route{margin-left: 35%;}
+  iframe{width:350px;}
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
@@ -184,7 +189,8 @@ nav ul li a:hover{
 }
 
 @media only screen and (max-width:1100px){
-
+  .route{margin-left: 25%;}
+  iframe{width:250px;}
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
@@ -229,9 +235,14 @@ nav ul li a:hover{
     }
     .icon{display: none;}
 }
+.dotdis{
+    border-left: 1.5px dotted lightgrey;
+    padding: 15px;
+}
 
 @media only screen and (max-width:750px){
-
+  iframe{display:none;}
+  .route{display:block;}
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
@@ -283,6 +294,11 @@ nav ul li a:hover{
   }
   .logo2contain,.mottotextcontainer{
     display: inline-block;
+  }
+  .dotdis{
+  display:block;
+  border:none;
+  padding:15px 5px;
   }
 
 
