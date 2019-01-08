@@ -5,7 +5,10 @@ html{font-size: 16px;}
     margin: 0 auto;
     max-width: 1400px;
     min-width: 400px;
-}
+  }
+  ::-webkit-scrollbar {
+      display: none;
+  }
 .comment{
   padding:10px;
   border: 1px solid #558971;
@@ -116,7 +119,7 @@ iframe{
 }
 .cloud {
     border-radius: 5px;
-    width:80%;
+    width:93%;
     margin:15px;
     padding: 10px;
     float:left;
@@ -151,7 +154,7 @@ iframe{
   border: 1px solid orange;
   padding: 1px 5px;
   padding-left: 20px;
-  background-image: url("Media/Overig/page_white_acrobat.png");
+  background-image: url("media/overig/page_white_acrobat.png");
   background-repeat: no-repeat;
   }
 .contac:hover{
@@ -215,7 +218,7 @@ iframe{
   .dotleft{
       border-left: none;
   }
-  .cloud.grey input{margin-left:10%;}
+  .cloud.grey input{margin-left:5%;}
   .vertcontainer input , .vertcontainer select{
     display: block;
     height: 30px;
