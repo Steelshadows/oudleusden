@@ -47,62 +47,29 @@
 		<div class="content">
 			<div class="dotborder" style="display: flex;">
 			<div class="photocont" id="photocont">
-				<img class="small" src="media\410 X 410\foto (1).jpg">
 			</div>
 <script>
 res = ""
 x=1
-for(x=1;x<31;x++){
+for(x=1;x<30;x++){
 	res =  document.createElement("img");
 	res.className = "small";
 	res.src = "media\\410 X 410\\foto ("+x+").jpg";
 	console.log(res);
-	document.getElementById("photocont").appendChild = res;
-	console.log(document.getElementById("photocont").appendChild = res;);
+	document.getElementById("photocont").appendChild(res);
 }
 </script>
-				<div class="dotleft">
-					<div class="slider">
-						<img class="mySlides" src="media/pics/foto1.jpg">
-						<img class="mySlides" src="media/pics/foto2.jpg">
-						<img class="mySlides" src="media/pics/foto3.jpg">
-						<img class="mySlides" src="media/pics/foto4.jpg">
-						<img class="mySlides" src="media/pics/foto5.jpg">
-						<img class="mySlides" src="media/pics/foto6.jpg">
-						<img class="mySlides" src="media/pics/foto7.jpg">
-						<img class="mySlides" src="media/pics/foto8.jpg">
-						<img class="mySlides" src="media/pics/foto9.jpg">
-
-						<script>
-	                        var myIndex = 0;
-	                        carousel();
-
-	                        function carousel() {
-	                            var i;
-	                            var x = document.getElementsByClassName("mySlides");
-	                            for (i = 0; i < x.length; i++) {
-	                                x[i].style.display = "none";
-	                            }
-	                            myIndex++;
-	                            if (myIndex > x.length) {myIndex = 1}
-	                            x[myIndex-1].style.display = "block";
-	                            setTimeout(carousel, 3500); // Change image every 2 seconds
-	                        }
-						</script>
-
-					</div>
-				</div>
 			</div>
 
 
 
 			<div class="dotborder" style="text-align:center;">
-				<span class="dik">Restaurant Oud Leusden</span><span class="bullet">&bull;</span>
-				<span>Vlooswijkseweg 1</span><span class="bullet">&bull;</span>
-				<span>3832 RG Leusden</span><span class="bullet">&bull;</span>
-				<span>033 - 4614098</span><span class="bullet">&bull;</span>
-				<a href="mailto:info@restaurantoudleusden.nl">info@restaurantoudleusden.nl</a>
-				<p><a href="https://twitter.com/oudleusden">@oudleusden volgen</a></p>
+			  <span class="dik">Restaurant Oud Leusden</span><span class="bullet">&bull;</span>
+			  <span>Vlooswijkseweg 1</span><span class="bullet">&bull;</span>
+			  <span>3832 RG Leusden</span><span class="bullet">&bull;</span>
+			  <span>033 - 4614098</span>
+			  <p><a href="https://www.facebook.com/RestaurantOudLeusden/" class="tiny"><img class="tiny" src="media/icon/fblogo.png" alt="onze facebook"</a>
+			  <a href="https://twitter.com/oudleusden" class="tiny"><img class="tiny" src="media/icon/twitterlogo.png" alt="@oudleusden volgen"></a></p>
 			</div>
 		</div>
 	</div>
