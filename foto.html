@@ -38,49 +38,64 @@
 				</li>
 				<li><a href="index.html">home</a></li>
 				<li><a href="reserveringen.html">reserveringen</a></li>
-				<li><a href="foto.html">Foto album</a></li>
+				<li><a class="thisnav" href="foto.html">Foto album</a></li>
 				<li><a href="gastenboek.html">gastenboek</a></li>
 				<li><a href="vaccaturen.html">vaccaturen</a></li>
-				<li><a class="thisnav" href="contact.html">contact</a></li>
+				<li><a href="contact.html">contact</a></li>
 			</ul>
 		</nav>
 		<div class="content">
-			<div class="dotborder flexing">
-				<div class="vertcontainer">
-					<div>
-						<h2>CONTACT & ROUTE</h2>
-						<p>Restaurant Oud Leusden</p>
-						<p>Vlooswijkseweg 1</p>
-						<p>3832 RG Leusden</p>
-					</div>
-					<br>
-					<div>
-						<p>Tel 033-4614098</p>
-						<a class="conthref" href="mailto:521282@edu.rocmn.nl">info@restaurantoudleusden.nl</a>
-					</div>
-					<br>
-					<div>
-						<p>We zijn 7 dagen per week geopend</p>
-						<p>maandag t/m zondag vanaf 10.00 uur</p>
-					</div>
-					<br>
-					<div>
-						<p>Routebeschrijving</p>
-						<a class="contac" target="_blank" href="Media/Overig/routebeschrijving.pdf">routebeschrijving.pdf</a>
+			<div class="dotborder" style="display: flex;">
+			<div class="photocont" id="photocont">
+				<img class="small" src="media\410 X 410\foto (1).jpg">
+			</div>
+<script>
+res = ""
+x=1
+for(x=1;x<31;x++){
+	res =  document.createElement("img");
+	res.className = "small";
+	res.src = "media\\410 X 410\\foto ("+x+").jpg";
+	console.log(res);
+	document.getElementById("photocont").appendChild = res;
+	console.log(document.getElementById("photocont").appendChild = res;);
+}
+</script>
+				<div class="dotleft">
+					<div class="slider">
+						<img class="mySlides" src="media/pics/foto1.jpg">
+						<img class="mySlides" src="media/pics/foto2.jpg">
+						<img class="mySlides" src="media/pics/foto3.jpg">
+						<img class="mySlides" src="media/pics/foto4.jpg">
+						<img class="mySlides" src="media/pics/foto5.jpg">
+						<img class="mySlides" src="media/pics/foto6.jpg">
+						<img class="mySlides" src="media/pics/foto7.jpg">
+						<img class="mySlides" src="media/pics/foto8.jpg">
+						<img class="mySlides" src="media/pics/foto9.jpg">
+
+						<script>
+	                        var myIndex = 0;
+	                        carousel();
+
+	                        function carousel() {
+	                            var i;
+	                            var x = document.getElementsByClassName("mySlides");
+	                            for (i = 0; i < x.length; i++) {
+	                                x[i].style.display = "none";
+	                            }
+	                            myIndex++;
+	                            if (myIndex > x.length) {myIndex = 1}
+	                            x[myIndex-1].style.display = "block";
+	                            setTimeout(carousel, 3500); // Change image every 2 seconds
+	                        }
+						</script>
+
 					</div>
 				</div>
-				<div class="vertcontainer">
-						<iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=Restaurant+Oud+Leusden+B.V.,+Leusderkwartier,+Leusden&amp;aq=0&amp;oq=restaurant+oud+le&amp;sll=52.469397,5.509644&amp;sspn=2.807679,4.938354&amp;t=h&amp;ie=UTF8&amp;hq=Restaurant+Oud+Leusden+B.V.,+Leusderkwartier,+Leusden&amp;ll=52.131382,5.372112&amp;spn=0.006295,0.006295&amp;output=embed"></iframe>
-						<br>
-						<a target="_blank"href="https://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=Restaurant+Oud+Leusden+B.V.,+Leusderkwartier,+Leusden&amp;aq=0&amp;oq=restaurant+oud+le&amp;sll=52.469397,5.509644&amp;sspn=2.807679,4.938354&amp;t=h&amp;ie=UTF8&amp;hq=Restaurant+Oud+Leusden+B.V.,+Leusderkwartier,+Leusden&amp;ll=52.131382,5.372112&amp;spn=0.006295,0.006295" style="text-align: left; color: rgb(0, 0, 255);">kaart weergeven op Google Maps</a>
-				</div>
-
-
-
-
 			</div>
 
-			</div>
+
+
 			<div class="dotborder" style="text-align:center;">
 				<span class="dik">Restaurant Oud Leusden</span><span class="bullet">&bull;</span>
 				<span>Vlooswijkseweg 1</span><span class="bullet">&bull;</span>
@@ -91,5 +106,5 @@
 			</div>
 		</div>
 	</div>
-</body>
+	</body>
 </html>
