@@ -13,6 +13,12 @@ html{font-size: 16px;}
   padding:10px;
   border: 1px solid #558971;
 }
+.small{
+  width:150px;
+  height:150px;
+  margin:5px;
+  display:inline-block;
+}
 header{
     padding:  5px 10px;
 }
