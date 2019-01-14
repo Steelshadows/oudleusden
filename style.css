@@ -5,6 +5,13 @@ html{font-size: 16px;}
     margin: 0 auto;
     max-width: 1400px;
     min-width: 400px;
+  }
+  ::-webkit-scrollbar {
+      display: none;
+  }
+.comment{
+  padding:10px;
+  border: 1px solid #558971;
 }
 header{
     padding:  5px 10px;
@@ -40,6 +47,11 @@ nav ul li a:hover{
 .mottotextcontainer{display: inline;}
 
 
+iframe{
+  width:300px;
+  height:300px;
+}
+
 .dotborder{
     border-top: 1.5px dotted lightgrey;
     margin-top: 10px;
@@ -51,9 +63,10 @@ nav ul li a:hover{
     font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
     font-weight: normal;
     font-size: 16px;
+    padding:5px;
 }
-.dotborder p{
-    margin:10px;
+.dotborder p , .dotborder a{
+  margin:10px;
 }
 .dik{font-weight: bold;}
 .groot{font-size: 1.2em;}
@@ -66,20 +79,16 @@ nav ul li a:hover{
     line-height: normal;
 //float:left;
 }
-.vertcontainer input , .vertcontainer select{
-    display: block;
-    height: 30px;
-    border-radius: 3px;
-    border: 1px solid #558971;
-    margin-bottom: 15px;
-    width: 130px;
-}
 .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
+
 /*input[type="submit"]{height:20px;} */
 
 .flexing{
     display: flex;
-
+    flex-direction: row;
+    align-items: center;
+    display:block;
+    flex-wrap: nowrap;
 }
 
 .mySlides {
@@ -110,11 +119,16 @@ nav ul li a:hover{
 }
 .cloud {
     border-radius: 5px;
-    width:80%;
+    width:93%;
     margin:15px;
-    display: flex;
     padding: 10px;
+    float:left;
 }
+.cloud.grey{
+  width: 27.7%;
+  height: 80%;
+}
+
 .cloud[type="submit"]{
     background-color:  #558971;
 }
@@ -127,9 +141,119 @@ nav ul li a:hover{
 }
 .klijn {font-size: 0.7em}
 
-
+.conthref{
+  color:#4e856b;
+  text-decoration: none;
+}
+.conthref:hover{color:black;}
+.contac{
+  text-decoration: none;
+  color:white;
+  border-radius: 5px;
+  background-color: orange;
+  border: 1px solid orange;
+  padding: 1px 5px;
+  padding-left: 20px;
+  background-image: url("media/overig/page_white_acrobat.png");
+  background-repeat: no-repeat;
+  }
+.contac:hover{
+  background-color: #558971;
+  border: 1px solid #558971;
+}
 
 @media only screen and (min-width:1100px){
+  .vertcontainer input , .vertcontainer select{
+    display: block;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #558971;
+    margin-bottom: 15px;
+    width: 230px;
+  }
+  .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
+  .slogan{
+    display:inline-block;
+    margin-right:42px;
+    width:40%;
+    background-color: #558971;
+    padding: 2px 5px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+  .slogan p{
+    font-style: italic;
+    font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
+    color:#fff;
+    width:auto;
+  }
+  .slogan p:first-of-type{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .slogan p:nth-of-type(2){
+    font-size: 15px;
+  }
+  .headerwifi,.headerlogo{
+    display:inline;
+    margin: 0 45px 0 15px;
+  }
+  .logo2contain{
+    display: none;
+  }
+  .icon{display: none;}
+}
+
+@media only screen and (max-width:1100px){
+  .mySlides{margin-left:calc(50vw - 310px);}
+  .cloud.grey{
+    width: 90%;
+    font-size: 1.2em;
+    text-align:center;
+  }
+  .dotborder{
+    flex-direction: column;
+  }
+  .dotleft{
+      border-left: none;
+  }
+  .cloud.grey input{margin-left:5%;}
+  .vertcontainer input , .vertcontainer select{
+    display: block;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #558971;
+    margin-bottom: 15px;
+    width: 190px;
+  }
+  .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
+  .slogan{
+    display:inline-block;
+    margin-right:42px;
+    width:40%;
+    background-color: #558971;
+    padding: 2px 5px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+  }
+  .slogan p{
+    font-style: italic;
+    font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
+    color:#fff;
+    width:auto;
+  }
+  .slogan p:first-of-type{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .slogan p:nth-of-type(2){
+    font-size: 15px;
+  }
+  .headerwifi,.headerlogo{
+    display:inline;
+=======
     .slogan{
         display:inline-block;
         margin-right:42px;
@@ -163,33 +287,6 @@ nav ul li a:hover{
     .icon{display: none;}
 }
 
-@media only screen and (max-width:1100px){
-    .slogan{
-        display:inline-block;
-        margin-right:42px;
-        width:40%;
-        background-color: #558971;
-        padding: 2px 5px;
-        position: relative;
-        justify-content: center;
-        text-align: center;
-    }
-    .slogan p{
-        font-style: italic;
-        font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
-        color:#fff;
-        width:auto;
-    }
-    .slogan p:first-of-type{
-        font-size: 17px;
-        font-weight: bold;
-    }
-    .slogan p:nth-of-type(2){
-        font-size: 15px;
-    }
-    .headerwifi,.headerlogo{
-        display:inline;
-
     }
     .logo2contain{
         display: none;
@@ -199,8 +296,79 @@ nav ul li a:hover{
     }
     .icon{display: none;}
 }
+.dotdis{
+    border-left: 1.5px dotted lightgrey;
+    padding: 15px;
+}
 
 @media only screen and (max-width:750px){
+  nav {height: 60px;}
+  #foldmenu{min-height: 55px;}
+  .vertcontainer input , .vertcontainer select{
+    display: block;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #558971;
+    margin-bottom: 15px;
+    width: 90%;
+  }
+  .mySlides{
+    margin-left:calc(50vw - 150px);
+    width:250px;
+    height:250px;
+    }
+  .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 35px; height: 30px; display: block;}
+  .bscontain{
+    box-shadow: none;
+    height: 100%;
+    width: 100%;
+  }
+  .slogan{
+    display:inline-block;
+    margin:2%;
+    width:96%;
+    background-color: #558971;
+    padding: 2px 5px;
+    text-align: center;
+  }
+  .flexing{
+    width:100%;
+  }
+  .vertcontainer{
+    display:block;
+    width:70%;
+  }
+  label{font-size: 1.5em;}
+  input , select{
+    width:80%;
+    font-size: 1.1em;
+    height:40px;
+  }
+  .slogan p{
+    font-style: italic;
+    font-family: "Calibri", verdana, candara, Andale Mono , Helvetica, sans-serif;
+    color:#fff;
+    width:auto;
+  }
+  .slogan p:first-of-type{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .slogan p:nth-of-type(2){
+    font-size: 15px;
+  }
+  .headerwifi , .headerlogo{
+    display:none;
+  }
+  .logo2contain,.mottotextcontainer{
+    display: inline-block;
+  }
+  .dotdis{
+  display:block;
+  border:none;
+  padding:15px 5px;
+  }
+=======
     .bscontain{
         box-shadow: none;
         height: 100%;
@@ -214,7 +382,7 @@ nav ul li a:hover{
         padding: 2px 5px;
         text-align: center;
     }
-    .flexing{display:block;width:100%;}
+    .flexing{width:100%;}
     .vertcontainer{
         display:block;
         width:80%;
@@ -244,12 +412,6 @@ nav ul li a:hover{
     .logo2contain,.mottotextcontainer{
         display: inline-block;
     }
-
-
-
-
-
-    #foldmenu{min-height: 53px;}
     .fold li:not(:first-child) {display: none;}
     .icon {
         float: right;
