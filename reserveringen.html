@@ -52,35 +52,42 @@
 				<form method="POST" action="mailto:521282@edu.rocmn.nl">
 
 					<div class="flexing">
-						<div class="vertcontainer">
-							<label for="naam">Naam:</label>
-							<input type="text" name="naam" required>
+						<div class="vertcontainer send">
+							<div>
+								<label for="naam">Naam:</label>
+								<input type="text" name="naam" required>
+							</div>
+							<div>
+								<label for="tel">Telefoon nummer:</label>
+								<input type="tel" name="tel" required>
+							</div>
+							<div>
+								<label for="bijeenkomst">kies een bijeenkomst:</label>
+								<select name="bijeenkomst" required>
+									<option selected disabled>kies...</option>
+									<option value="dinner">dinner</option>
+									<option value="vergadering">vergadering</option>
+									<option value="beurs">beurs</option>
+									<option value="congres">congres</option>
+									<option value="presentatie">presentatie</option>
+									<option value="feest">feest</option>
+									<option value="receptie">receptie</option>
+									<option value="bruiloft">bruiloft</option>
+								</select>
+							</div>
 
-							<label for="tel">Telefoon nummer:</label>
-							<input type="tel" name="tel" required>
-
-							<label for="bijeenkomst">kies een bijeenkomst:</label>
-							<select name="bijeenkomst" required>
-								<option selected disabled>kies...</option>
-								<option value="dinner">dinner</option>
-								<option value="vergadering">vergadering</option>
-								<option value="beurs">beurs</option>
-								<option value="congres">congres</option>
-								<option value="presentatie">presentatie</option>
-								<option value="feest">feest</option>
-								<option value="receptie">receptie</option>
-								<option value="bruiloft">bruiloft</option>
-							</select>
-
-
-							<label for="mensen">aprox. aantal mensen:</label>
-							<input type="number" name="mensen"required>
-
-							<label for="btijd">begintijd</label>
-							<input type="time" name="btijd"required>
-
-							<label for="etijd">eindtijd</label>
-							<input type="time" name="etijd"required>
+							<div>
+								<label for="mensen">verwachte aantal mensen:</label>
+								<input type="number" name="mensen"required>
+							</div>
+							<div>
+								<label for="btijd">begintijd</label>
+								<input type="time" name="btijd"required>
+							</div>
+							<div>
+								<label for="etijd">eindtijd</label>
+								<input type="time" name="etijd"required>
+							</div>
 						</div>
 
 
@@ -89,26 +96,29 @@
 
 
 
-						<div class="vertcontainer">
-							<label for="bnaam">bedrijfsnaam:</label>
-							<input type="text" name="bnaam"required>
-
-							<label for="email">E-Mail adres:</label>
-							<input type="email" name="email"required>
-
-							<label for="datum">datum:</label>
-							<input type="date" name="datum"required>
-
-							<label>extra keuzes</label>
-							<div><label for="lunch">lunch</label><input type="checkbox" name="lunch"></div>
-							<div><label for="audio">audio</label><input type="checkbox" name="audio"></div>
-							<div><label for="pauze">koffie pauze</label><input type="checkbox" name="pauze"></div>
-							<div><label for="koek">koekassortiment</label><input type="checkbox" name="koek"></div>
-<!--
-							<label for=""></label>
-							<input type="text" name=""required>
--->
-							<input type="submit" value="verstuur">
+						<div class="vertcontainer send">
+							<div>
+								<label for="bnaam">bedrijfsnaam:</label>
+								<input type="text" name="bnaam"required>
+							</div>
+							<div>
+								<label for="email">E-Mail adres:</label>
+								<input type="email" name="email"required>
+							</div>
+							<div>
+								<label for="datum">datum:</label>
+								<input type="date" name="datum"required>
+							</div>
+							<div style="text-align: left;"><label>extra keuzes</label><br>
+								<input type="checkbox" name="lunch"><label for="lunch">lunch</label><br>
+								<input type="checkbox" name="pauze"><label for="pauze">koffie pauze</label><br>
+								<input type="checkbox" name="koek"><label for="koek">koekassortiment</label>
+							</div>
+							<div><text style="color:white;">yo</text></div>
+							<div>
+								<text style="color:white;">yo</text>
+								<input type="submit" value="verstuur">
+							</div>
 						</div>
 				</div>
 			</form>

@@ -9,6 +9,22 @@ html{font-size: 16px;}
   ::-webkit-scrollbar {
       display: none;
   }
+  #imgbox
+{
+    vertical-align : middle;
+    position : absolute;
+    top:30%;
+    left:30%;
+    border: 1px solid #999;
+    background : #FFFFFF;
+    filter: Alpha(Opacity=100);
+    visibility : hidden;
+    height : 500px;
+    width : 500px;
+    z-index : 50;
+    overflow : hidden;
+    text-align : center;
+}
 .comment{
   padding:10px;
   border: 1px solid #558971;
@@ -86,11 +102,12 @@ iframe{
 
 .vertcontainer{
     width:30%;
-    display: inline-block;
+    display:flex;
+    flex-direction: column;
     margin:5%;
     line-height: normal;
-//float:left;
 }
+.vertcontainer > div{margin-bottom: 50px; width:300px;}
 .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
 
 /*input[type="submit"]{height:20px;} */
@@ -98,8 +115,7 @@ iframe{
 .flexing{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    display:block;
+    align-items: baseline;
     flex-wrap: nowrap;
 }
 
@@ -183,7 +199,7 @@ iframe{
     margin-bottom: 15px;
     width: 230px;
   }
-  .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
+  .vertcontainer.send  > div{height: 30px; display: inline;}
   .slogan{
     display:inline-block;
     margin-right:42px;
@@ -239,7 +255,7 @@ iframe{
     margin-bottom: 15px;
     width: 190px;
   }
-  .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 15px; height: 20px; display: inline;}
+  .vertcontainer input[type="checkbox"]{ width: 15px; height: 20px; display: inline;}
   .slogan{
     display:inline-block;
     margin-right:42px;
@@ -329,7 +345,7 @@ iframe{
     width:250px;
     height:250px;
     }
-  .vertcontainer input[type="checkbox"] , input[type="checkbox"] + label{ width: 35px; height: 30px; display: block;}
+  .vertcontainer input[type="checkbox"]label{ width: 35px; height: 30px; display: block;}
   .bscontain{
     box-shadow: none;
     height: 100%;
@@ -345,6 +361,7 @@ iframe{
   }
   .flexing{
     text-align: center;
+    flex-direction: column;
     width:100%;
   }
   .vertcontainer{
@@ -395,7 +412,9 @@ iframe{
         padding: 2px 5px;
         text-align: center;
     }
-    .flexing{width:100%;}
+    .flexing{
+      width:100%;
+      flex-direction: column;}
     .vertcontainer{
         display:block;
         width:80%;

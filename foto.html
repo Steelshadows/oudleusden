@@ -47,17 +47,87 @@
 		</nav>
 		<div class="content">
 			<div class="dotborder" style="display: flex;">
-			<div class="photocont" id="photocont">
-			</div>
+				<div id="imgbox"></div>
+				<div class="photocont" id="photocont">
+				</div>
 <script>
 res = ""
 x=1
-for(x=1;x<30;x++){
+for(x=1;x<11;x++){
 	res =  document.createElement("img");
 	res.className = "small";
 	res.src = "media\\410 X 410\\foto ("+x+").jpg";
+	res.setAttribute('onclick', "Large(this)")
 	console.log(res);
 	document.getElementById("photocont").appendChild(res);
+}
+
+
+
+function getElementLeft(elm)
+{
+    var x = 0;
+
+    //set x to elm’s offsetLeft
+    x = elm.offsetLeft;
+
+    //set elm to its offsetParent
+    elm = elm.offsetParent;
+
+    //use while loop to check if elm is null
+    // if not then add current elm’s offsetLeft to x
+    //offsetTop to y and set elm to its offsetParent
+
+    while(elm != null)
+    {
+        x = parseInt(x) + parseInt(elm.offsetLeft);
+        elm = elm.offsetParent;
+    }
+    return x;
+}
+
+function getElementTop(elm)
+{
+    var y = 0;
+
+    //set x to elm’s offsetLeft
+    y = elm.offsetTop;
+
+    //set elm to its offsetParent
+    elm = elm.offsetParent;
+
+    //use while loop to check if elm is null
+    // if not then add current elm’s offsetLeft to x
+    //offsetTop to y and set elm to its offsetParent
+
+    while(elm != null)
+    {
+        y = parseInt(y) + parseInt(elm.offsetTop);
+        elm = elm.offsetParent;
+    }
+
+    return y;
+}
+function Large(obj)
+{
+    var imgbox=document.getElementById("imgbox");
+    imgbox.style.visibility='visible';
+    var img = document.createElement("img");
+    img.src=obj.src;
+    img.style.width='100%';
+    img.style.height='100%';
+
+    if(img.addEventListener){
+        img.addEventListener('mouseout',Out,false);
+    } else {
+        img.attachEvent('onmouseout',Out);
+    }
+    imgbox.innerHTML='';
+    imgbox.appendChild(img);
+}
+function Out()
+{
+    document.getElementById("imgbox").style.visibility='hidden';
 }
 </script>
 			</div>
