@@ -13,6 +13,11 @@ html{font-size: 16px;}
     max-width:90vw;
 
   }
+  .photocont{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
   #imgbox
 {
     vertical-align : middle;
@@ -122,7 +127,6 @@ iframe{
 .flexing{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
     flex-wrap: nowrap;
 }
 
@@ -340,6 +344,7 @@ iframe{
   .chkbx input{
   transform: scale(1.5);
   }
+    #imgbox{}
   nav {height: 60px;}
   #foldmenu{min-height: 55px;}
   .vertcontainer input , .vertcontainer select{

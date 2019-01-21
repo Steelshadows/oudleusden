@@ -46,7 +46,7 @@
 			</ul>
 		</nav>
 		<div class="content">
-			<div class="dotborder" style="display: flex;">
+			<div class="dotborder">
 				<div id="imgbox"></div>
 				<p>hier ziet u een collectie van onze foto's van binnen, buiten en van een paar gerechten</p>
 				<div class="photocont" id="photocont"></div>
@@ -54,12 +54,12 @@
 <script>
 res = ""
 x=1
-for(x=1;x<11;x++){
+for(x=1;x<21;x++){
 	res =  document.createElement("img");
 	res.className = "small";
 	res.src = "media\\410 X 410\\foto ("+x+").jpg";
-	res.setAttribute('onclick', "Large(this)")
-	console.log(res);
+	res.setAttribute('onmouseover', "Large(this)")
+	// console.log(res);
 	document.getElementById("photocont").appendChild(res);
 }
 
