@@ -460,4 +460,8 @@ iframe{
         font-size: 30px;
         margin-bottom: 15px;
     }
+    #imgbox{
+      width:250px;
+      height:250px;
+      position:sticky;}
 }
